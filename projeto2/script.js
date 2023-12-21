@@ -54,11 +54,11 @@ function calculaMedia(){
 
 function mediaFinal(){
     let media = calculaMedia();
-    /* let results = media.toFixed(1); */
+    let results = media.toFixed(1);
     const corpoTabela = document.querySelector('tfoot');
     let linha = `<tr>`;
     linha += `<td>Média Final</td>`;
-    linha += `<td>${media}</td>`;
+    linha += `<td>${results}</td>`;
     linha += `<td>${media >= 7 ? 
         resultadoAprovado : 
         resultadoReprovado}</td>`;
