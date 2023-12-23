@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Kanit&display=swap" rel="stylesheet">
+    <title>Agenda Telefônica</title>
+</head>
+
+<body>
+    <div class="background">
+        <div class="container">
+            <header>
+                <div class="titulo">
+                    <img src="images/cityPhoneCall.png" alt="Logo telefone">
+                    <h1>Agenda Telefônica</h1>
+                </div>
+                <p>Digite seus contatos para salva-los, se houver <strong>redundância de nome</strong> ele aparecerá
+                    destacado.</p>
+            </header>
+        </div>
+        <div class="container">
+            <form id="formulario">
+                <input id="nome" type="text" placeholder="Digite o nome do contato." required minlength="2"
+                    maxlength="10">
+                <input id="numero" type="tel" placeholder="Digite o número do contato." required minlength="9"
+                    maxlength="11">
+                <button type="submit">Adicionar+</button>
+            </form>
+        </div>
+        <div class="container">
+            <table cellspacing="0">
+                <thead>
+                    <th>ID</th>
+                    <th>Nome</th>
+                    <th>Contato</th>
+                </thead>
+                <tbody id="contatos">
+                    <tr>
+                        <td> -- </td>
+                        <td> ---------- </td>
+                        <td> ---------- </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <footer> ---- Lista telefônica ---- </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
